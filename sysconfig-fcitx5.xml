@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  System configuration for Fcitx5 input method
+  This file configures system-wide settings and features
+-->
+<config>    
+    <!-- Enable clipboard access for input method -->
+    <enabled-clipboard-listener package="org.fcitx.fcitx5.android"/>
+
+    <!-- Direct boot aware components -->
+    <direct-boot-aware package="org.fcitx.fcitx5.android">
+        <component class="org.fcitx.fcitx5.android.input.FcitxInputMethodService" />
+        <component class="androidx.startup.InitializationProvider" />
+    </direct-boot-aware>
+</config>

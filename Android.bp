@@ -1,0 +1,31 @@
+prebuilt_etc {
+    name: "default-permissions-fcitx5.xml",
+    src: "default-permissions-fcitx5.xml",
+    product_specific: true,
+    relative_install_path: "default-permissions",
+}
+
+prebuilt_etc {
+    name: "sysconfig-fcitx5.xml",
+    src: "sysconfig-fcitx5.xml",
+    product_specific: true,
+    relative_install_path: "sysconfig",
+}
+
+android_app_import {
+    name: "Fcitx5",
+    apk: "Fcitx5.apk",
+    presigned: false, 
+    preprocessed: false,
+    certificate: "shared",
+    overrides: ["LatinIME"],
+    dex_preopt: {
+        enabled: false,
+    },
+    product_specific: true,
+    required: [
+        "default-permissions-fcitx5.xml",
+        "sysconfig-fcitx5.xml",
+    ],
+    optional_uses_libs: ["androidx.window.extensions","androidx.window.sidecar"],
+}

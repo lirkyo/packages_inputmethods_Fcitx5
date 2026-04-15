@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+
+<exceptions>
+    <exception package="org.fcitx.fcitx5.android">
+        <!-- System permissions from AndroidManifest.xml -->
+        <permission name="android.permission.VIBRATE" fixed="false"/>
+        <permission name="android.permission.POST_NOTIFICATIONS" fixed="false"/>
+        
+        <!-- Signature-level permissions defined by the app -->
+        <permission name="org.fcitx.fcitx5.android.permission.IPC" fixed="false"/>
+        <permission name="org.fcitx.fcitx5.android.permission.PLUGIN" fixed="false"/>
+        
+        <!-- System permissions required for components -->
+        <permission name="android.permission.BIND_INPUT_METHOD" fixed="false"/>
+        <permission name="android.permission.MANAGE_DOCUMENTS" fixed="false"/>
+        
+        <!-- Required for file/document provider -->
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false"/>
+    </exception>
+</exceptions>

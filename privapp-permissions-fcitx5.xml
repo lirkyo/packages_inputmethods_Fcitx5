@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Privileged permissions for Fcitx5 input method application
+  Auto-generated from AndroidManifest.xml
+-->
+<permissions>
+    <privapp-permissions package="org.fcitx.fcitx5.android">
+        <!-- System permissions from AndroidManifest.xml -->
+        <permission name="android.permission.VIBRATE"/>
+        <permission name="android.permission.POST_NOTIFICATIONS"/>
+        
+        <!-- Signature-level permissions defined by the app -->
+        <permission name="org.fcitx.fcitx5.android.permission.IPC"/>
+        <permission name="org.fcitx.fcitx5.android.permission.PLUGIN"/>
+        
+        <!-- System permissions required for components -->
+        <permission name="android.permission.BIND_INPUT_METHOD"/>
+        <permission name="android.permission.MANAGE_DOCUMENTS"/>
+        
+        <!-- Required for file/document provider -->
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+    </privapp-permissions>
+</permissions>
